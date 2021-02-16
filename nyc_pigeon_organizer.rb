@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
       if list.key?(name) == false
         temp_hash = default_hash.clone
         list[name] = {:color => [], :gender => [], :lives => []}
-        
+      end
       #binding.pry
       list[name][:color].push(key.to_s)
       binding.pry
