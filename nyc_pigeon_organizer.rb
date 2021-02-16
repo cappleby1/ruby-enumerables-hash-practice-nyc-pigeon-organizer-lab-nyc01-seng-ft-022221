@@ -22,7 +22,6 @@ def nyc_pigeon_organizer(data)
       list[name][:color].push(key)
     end
     
-  return list
   end
   
   
