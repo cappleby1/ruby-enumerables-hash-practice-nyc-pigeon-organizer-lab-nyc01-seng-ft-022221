@@ -19,7 +19,6 @@ def nyc_pigeon_organizer(data)
       #binding.pry
       if list.key?(name) == false
         list[name] = default_hash
-        puts list
       end
       #binding.pry
       list[name][:color].push(key)
