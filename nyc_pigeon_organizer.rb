@@ -12,21 +12,22 @@ def nyc_pigeon_organizer(data)
     :lives => []
   }
   
-  data[:color].each do |key, value|
-    #puts "#{key} and #{value}"
-    data[:color][key].each do |name|
-      #puts "#{key} and #{name}"
-      #binding.pry
-      if list.key?(name) == false
-        temp_hash = default_hash.clone
-        list[name] = {:color => [], :gender => [], :lives => []}
-      end
-      #binding.pry
-      list[name][:color].push(key.to_s)
-      binding.pry
-    end
+  data.each do |attribute, val|
     
-  end
+    data[:color].each do |key, value|
+      #puts "#{key} and #{value}"
+      data[:color][key].each do |name|
+        #puts "#{key} and #{name}"
+        #binding.pry
+        if list.key?(name) == false
+          temp_hash = default_hash.clone
+          list[name] = {:color => [], :gender => [], :lives => []}
+        end
+        #binding.pry
+        list[name][:color].push(key.to_s)
+        #binding.pry
+      end
+    end
   
   
   
