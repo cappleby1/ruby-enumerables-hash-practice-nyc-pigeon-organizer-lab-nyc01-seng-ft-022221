@@ -13,7 +13,6 @@ def nyc_pigeon_organizer(data)
   }
   
   data[:color].each do |key, value|
-    puts data[:color][key]
     data[:color][key].each do |name|
       #binding.pry
       if list.key?(name) == false
