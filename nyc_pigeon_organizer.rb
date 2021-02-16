@@ -11,7 +11,9 @@ def nyc_pigeon_organizer(data)
   
   pigeon_data[:color].each do |key, value|
     
-    pigeon_data[:color]key
+    pigeon_data[:color][key] do |name|
+      
+      if list.include?
   
   
   
