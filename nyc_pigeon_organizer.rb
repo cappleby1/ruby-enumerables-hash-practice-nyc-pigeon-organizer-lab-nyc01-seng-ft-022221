@@ -57,7 +57,7 @@ pigeon_data = {
   }
 }
 
-pigeon_list1 = {
+pigeon_data1 = {
   "Theo" => {
     :color => ["purple", "grey"],
     :gender => ["male"],
