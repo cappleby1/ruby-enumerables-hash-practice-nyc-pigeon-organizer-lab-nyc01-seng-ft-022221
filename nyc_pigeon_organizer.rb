@@ -21,6 +21,7 @@ def nyc_pigeon_organizer(data)
         list[name] = default_hash
       end
       #binding.pry
+      puts "#{name} and #{color}"
       list[name][:color].push(key)
     end
     
