@@ -16,7 +16,7 @@ def nyc_pigeon_organizer(data)
       if list.include? name == false
         list[name] = default_hash
       end
-      list[name][:color] << key
+      list[name][:color].push(key)
     end
   end
   
