@@ -26,7 +26,7 @@ def nyc_pigeon_organizer(data)
   
   
   
-  
+  return list
   
 end
 
@@ -45,4 +45,4 @@ pigeon_data = {
   }
 }
 
-nyc_pigeon_organizer(pigeon_data)
+puts nyc_pigeon_organizer(pigeon_data)
