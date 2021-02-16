@@ -18,7 +18,7 @@ def nyc_pigeon_organizer(data)
       #puts "#{key} and #{name}"
       #binding.pry
       if list.key?(name) == false
-        list[name] = default_hash
+        list[name] = default_hash.clone
       end
       binding.pry
       list[name][:color].push(key.to_s)
