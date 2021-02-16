@@ -19,6 +19,7 @@ def nyc_pigeon_organizer(data)
       #binding.pry
       if list.key?(name) == false
         list[name] = default_hash
+        puts list
       end
       #binding.pry
       list[name][:color].push(key)
@@ -38,24 +39,20 @@ def nyc_pigeon_organizer(data)
   
 end
 
-
 pigeon_data = {
   :color => {
-    :purple => ["Theo", "Peter Jr.", "Lucky"],
-    :grey => ["Theo", "Peter Jr.", "Ms. K"],
-    :white => ["Queenie", "Andrew", "Ms. K", "Alex"],
-    :brown => ["Queenie", "Alex"]
+    :brown => ["Luca"],
+    :black => ["Lola"],
   },
   :gender => {
-    :male => ["Alex", "Theo", "Peter Jr.", "Andrew", "Lucky"],
-    :female => ["Queenie", "Ms. K"]
+    :male => ["Luca"],
+    :female => ["Lola"]
   },
   :lives => {
-    "Subway" => ["Theo", "Queenie"],
-    "Central Park" => ["Alex", "Ms. K", "Lucky"],
-    "Library" => ["Peter Jr."],
-    "City Hall" => ["Andrew"]
+    "Central Park" => ["Lola"],
+    "Library" => ["Luca"]
   }
 }
+
 
 puts nyc_pigeon_organizer(pigeon_data)
