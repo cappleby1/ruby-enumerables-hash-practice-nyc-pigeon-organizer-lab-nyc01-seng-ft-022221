@@ -13,9 +13,9 @@ def nyc_pigeon_organizer(data)
   }
   
   data.each do |attribute, val|
-    data[:color].each do |key, value|
+    data[attribute].each do |key, value|
       #puts "#{key} and #{value}"
-      data[:color][key].each do |name|
+      data[attribute][key].each do |name|
         #puts "#{key} and #{name}"
         #binding.pry
         if list.key?(name) == false
@@ -23,7 +23,7 @@ def nyc_pigeon_organizer(data)
           list[name] = {:color => [], :gender => [], :lives => []}
         end
         #binding.pry
-        list[name][:color].push(key.to_s)
+        list[name][attribute].push(key.to_s)
         #binding.pry
       end
     end
