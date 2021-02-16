@@ -13,6 +13,7 @@ def nyc_pigeon_organizer(data)
   }
   
   data[:color].each do |key, value|
+    
     data[:color][key].each do |name|
       puts "#{key} and #{name}"
       #binding.pry
