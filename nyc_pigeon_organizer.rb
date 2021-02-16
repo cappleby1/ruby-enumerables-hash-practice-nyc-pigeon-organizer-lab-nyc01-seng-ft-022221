@@ -10,9 +10,7 @@ def nyc_pigeon_organizer(data)
   }
   
   pigeon_data[:color].each do |key, value|
-    
     pigeon_data[:color][key] do |name|
-      
       if list.include? name == false
         list[name] = default_hash
       end
@@ -31,3 +29,6 @@ def nyc_pigeon_organizer(data)
   
   
 end
+
+
+nyc_pigeon_organizer(data)
