@@ -17,7 +17,6 @@ def nyc_pigeon_organizer(data)
       #binding.pry
       data[attribute][key].each do |name|
         if list.key?(name) == false
-          temp_hash = default_hash.clone
           list[name] = {:color => [], :gender => [], :lives => []}
         end
         #binding.pry
