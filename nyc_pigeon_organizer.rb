@@ -16,7 +16,7 @@ def nyc_pigeon_organizer(data)
     puts data[:color][key]
     data[:color][key].each do |name|
       
-      if list.key?(name) == nil
+      if list.key?(name) != nil
         list[name] = default_hash
       end
       binding.pry
