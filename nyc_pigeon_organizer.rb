@@ -21,6 +21,8 @@ def nyc_pigeon_organizer(data)
       #binding.pry
       list[name][:color].push(key)
     end
+    
+  return list
   end
   
   
