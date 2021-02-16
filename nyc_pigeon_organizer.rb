@@ -4,8 +4,8 @@ def nyc_pigeon_organizer(data)
   list = {}
   
   default_hash = {
-    :color => []
-    :gender => []
+    :color => [],
+    :gender => [],
     :lives => []
   }
   
