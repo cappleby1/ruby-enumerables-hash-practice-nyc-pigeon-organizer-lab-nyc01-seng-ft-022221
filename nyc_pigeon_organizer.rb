@@ -14,6 +14,7 @@ def nyc_pigeon_organizer(data)
   
   data[:color].each do |key, value|
     data[:color][key].each do |name|
+      puts name
       #binding.pry
       if list.key?(name) == false
         list[name] = default_hash
