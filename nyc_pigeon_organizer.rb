@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
   
   data.each do |attribute, val|
     data[attribute].each do |key, value|
-      #binding.pry
+      binding.pry
       data[attribute][key].each do |name|
         if list.key?(name) == false
           list[name] = {:color => [], :gender => [], :lives => []}
