@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(data)
     
     pigeon_data[:color][key] do |name|
       
-      if list.include?
+      if list.include? == false
   
   
   
