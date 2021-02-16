@@ -15,6 +15,7 @@ def nyc_pigeon_organizer(data)
   data.each do |attribute, val|
     data[attribute].each do |key, value|
       #puts "#{key} and #{value}"
+      binding.pry
       data[attribute][key].each do |name|
         #puts "#{key} and #{name}"
         #binding.pry
