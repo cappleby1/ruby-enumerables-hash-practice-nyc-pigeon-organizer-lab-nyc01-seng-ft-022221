@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(data)
   }
   
   data[:color].each do |key, value|
-    puts "#{key}"
+    puts "#{key} and #{value}"
     data[:color][key].each do |name|
       #puts "#{key} and #{name}"
       #binding.pry
@@ -21,7 +21,6 @@ def nyc_pigeon_organizer(data)
         list[name] = default_hash
       end
       #binding.pry
-      puts "#{name} and #{color}"
       list[name][:color].push(key)
     end
     
