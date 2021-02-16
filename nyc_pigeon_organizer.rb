@@ -13,7 +13,6 @@ def nyc_pigeon_organizer(data)
   }
   
   data.each do |attribute, val|
-    
     data[:color].each do |key, value|
       #puts "#{key} and #{value}"
       data[:color][key].each do |name|
@@ -28,7 +27,9 @@ def nyc_pigeon_organizer(data)
         #binding.pry
       end
     end
+  end
   
+ 
   
   
   
