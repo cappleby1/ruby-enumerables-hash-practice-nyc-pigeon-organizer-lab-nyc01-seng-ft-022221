@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
   }
   
   data[:color].each do |key, value|
-    puts key
+    puts data[:color][key]
     data[:color][key] do |name|
       puts "test"
       if list.include? name == false
