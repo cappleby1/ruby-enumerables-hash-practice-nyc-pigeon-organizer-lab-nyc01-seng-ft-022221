@@ -15,7 +15,8 @@ def nyc_pigeon_organizer(data)
         list[name] = default_hash
       end
       list[name][:color] = key
-      
+    end
+  end
   
   
   
