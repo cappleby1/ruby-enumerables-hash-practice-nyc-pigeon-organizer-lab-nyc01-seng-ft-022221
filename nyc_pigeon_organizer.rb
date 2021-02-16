@@ -97,3 +97,4 @@ pigeon_list1 = {
 
 
 puts nyc_pigeon_organizer(pigeon_data)
+puts nyc_pigeon_organizer(pigeon_data1)
